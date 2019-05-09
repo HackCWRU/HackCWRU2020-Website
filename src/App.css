@@ -1,0 +1,173 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: prstartk;
+  src: url("./Assets/font/prstartk.ttf");
+}
+
+body {
+  background-image:url("./Assets/backgrounds/Header_Section_Background.svg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+  /** Count Down Line **/
+.countdown {
+  position: relative;
+  top: 100px;
+}
+
+#countdownText {
+  font-family: prstartk;
+  color: #F3DFDF;
+  font-size: 15px;
+}
+
+
+  /** 
+  These are the content related css files
+  **/
+
+  
+.header {
+  position: relative;
+  padding: 10%;
+}
+
+#CWRUTitle {
+  width: 95%;
+  height: auto;
+}
+
+#subTitle {
+  width: 40%;
+  height: auto;
+  float: right;
+
+}
+
+/** Text In .header **/
+#CWRU { 
+  font-family: prstartk;
+  color: #218632;
+  font-size: 25px;
+}
+
+#date {
+  font-family: prstartk;
+  color: #1B81AE;
+  font-size: 25px;
+}
+
+#comingSoon {
+  font-family: prstartk;
+  color: #D5DDE2;
+  font-size: 25px;
+}
+
+/* Sparton Logo in Intro*/
+.myLogo {
+  position: relative;
+  width: 15%;
+  height: auto;
+}
+
+.spartonLogo img {
+  position: relative;
+  padding: 20%;
+  left: 250%;
+  width: 90%;
+  height: auto;
+}
+
+/* About Section */
+#aboutTitle {
+  font-family: prstartk;
+  color: chocolate;
+  font-size: 25px;
+}
+
+#aboutContent {
+  font-family: prstartk;
+  color: #D5DDE2;
+  font-size: 20px;
+  left: 500px;
+}
+
+
+/** responsive for mobile phone **/
+@media only screen and (max-width: 600px) {
+  .countdown {
+    position: relative;
+    top: 120px;
+  }
+  
+  #countdownText {
+    font-family: prstartk;
+    color: #F3DFDF;
+    font-size: 7px;
+  }
+  .header {
+      position: relative;
+      padding: 10%;
+      top: 100px;
+  }
+  #CWRU { 
+      font-family: prstartk;
+      color: #218632;
+      font-size: 15px;
+  }
+    
+  #date {
+      font-family: prstartk;
+      color: #1B81AE;
+      font-size: 15px;
+  }
+  #comingSoon {
+      font-family: prstartk;
+      color: #D5DDE2;
+      font-size: 20px;
+  }
+
+.about {
+  display: none;
+}
+}
+
+  
+
+
