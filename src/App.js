@@ -10,7 +10,7 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-      HackDate: 'Feb 15, 2020 21:00:00'
+      HackDate: 'Feb 9, 2020 21:00:00'
     }
   }
 

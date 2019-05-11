@@ -13,7 +13,7 @@ class Content extends Component {
                 <img id = "subTitle"  src = {subTitle} alt = "The 2020 subtitle" />
                 <Logo />
                 <h3 id = "CWRU">Case Western Reserve University</h3>
-                <h4 id = "date">February 15-17th 2020 </h4>  <br/><br/>
+                <h4 id = "date">February 9-11th 2020 </h4>  <br/><br/>
                 <h1 id = "comingSoon"> Coming Soon...! </h1>
             </div>
           </div>  
