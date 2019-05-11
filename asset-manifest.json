@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/HackCWRU2020-Website/static/css/main.13b7d65b.chunk.css",
+    "main.js": "/HackCWRU2020-Website/static/js/main.89b2c7a1.chunk.js",
+    "main.js.map": "/HackCWRU2020-Website/static/js/main.89b2c7a1.chunk.js.map",
+    "runtime~main.js": "/HackCWRU2020-Website/static/js/runtime~main.56949ac0.js",
+    "runtime~main.js.map": "/HackCWRU2020-Website/static/js/runtime~main.56949ac0.js.map",
+    "static/js/2.609907aa.chunk.js": "/HackCWRU2020-Website/static/js/2.609907aa.chunk.js",
+    "static/js/2.609907aa.chunk.js.map": "/HackCWRU2020-Website/static/js/2.609907aa.chunk.js.map",
+    "index.html": "/HackCWRU2020-Website/index.html",
+    "precache-manifest.409c7509eadd78ac01f8918c3eeaada3.js": "/HackCWRU2020-Website/precache-manifest.409c7509eadd78ac01f8918c3eeaada3.js",
+    "service-worker.js": "/HackCWRU2020-Website/service-worker.js",
+    "static/css/main.13b7d65b.chunk.css.map": "/HackCWRU2020-Website/static/css/main.13b7d65b.chunk.css.map",
+    "static/media/App.css": "/HackCWRU2020-Website/static/media/prstartk.4e9a195e.ttf",
+    "static/media/Pixelated Spartron.svg": "/HackCWRU2020-Website/static/media/Pixelated Spartron.51a1511a.svg",
+    "static/media/Subtitle 2020.svg": "/HackCWRU2020-Website/static/media/Subtitle 2020.935e5f03.svg",
+    "static/media/Title.svg": "/HackCWRU2020-Website/static/media/Title.5b4295e6.svg",
+    "static/media/register button up.svg": "/HackCWRU2020-Website/static/media/register button up.48b588ca.svg"
+  }
+}
