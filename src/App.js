@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Logo from './components/Logo.js';
-import HeaderSection from "./components/HeaderSection.js";
+import HeaderSection from "./components/HeaderSection";
 import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
 import Countdown from './components/Countdown.js';
