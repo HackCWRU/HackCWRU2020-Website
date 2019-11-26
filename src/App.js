@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import HeaderSection from "./components/HeaderSection";
 import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
-import Countdown from './components/Countdown.js';
-import About from './components/About.js';
+import {Countdown,About} from './components';
 
 class App extends Component{
   constructor(props){

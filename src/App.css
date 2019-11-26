@@ -33,6 +33,16 @@
   src: url("./Assets/font/prstartk.ttf");
 }
 
+@font-face {
+  font-family: games;
+  src: url("./Assets/font/Games.ttf");
+}
+
+@font-face {
+  font-family: opensans;
+  src: url("./Assets/font/OpenSans-Regular.ttf");
+}
+
 body {
   background-image:url("./Assets/backgrounds/Header_Section_Background.svg");
   background-repeat: repeat;
@@ -90,22 +100,25 @@ body,html {
   right: 0px;
 
 }
+.subTitleContainer{
+  text-align: left;
+}
 
 /** Text In .header **/
 #CWRU { 
-  font-family: prstartk;
+  font-family: opensans;
   color: #218632;
   font-size: 25px;
 }
 
 #date {
-  font-family: prstartk;
+  font-family: opensans;
   color: #1B81AE;
   font-size: 25px;
 }
 
 #comingSoon {
-  font-family: prstartk;
+  font-family: opensans;
   color: #D5DDE2;
   font-size: 25px;
 }
@@ -129,9 +142,64 @@ body,html {
   height: 300px;
 }
 
+.headerButtonSection{
+  text-align: center;
+}
+
+button:focus {outline:0;}
+button:hover {cursor: pointer;}
+
+#registerBtn{
+  font-family: games;
+  letter-spacing: 4px;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: #15121b;
+  border-color: darkred;
+  border-width: 2px;
+  color: darkred;
+  border-style: solid;
+  transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
+}
+
+#registerBtn:hover{
+  text-shadow:0 0 10px red;
+  background: #15121b;
+  border-color: rgb(255, 193, 193);
+  box-shadow: 0 0 15px 2px red, 0 0 12px 2px red inset;
+  color: rgb(255, 193, 193);
+}
+
+#oldWebsiteBtn{
+  font-family: games;
+  letter-spacing: 4px;
+  font-size: 30px;
+  text-shadow: 0;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: #15121b;
+  border-color: grey;
+  box-shadow: 0;
+  border-width: 2px;
+  color: grey;
+  border-style: solid;
+  transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
+}
+
+#oldWebsiteBtn:hover{
+  text-shadow:0 0 10px grey;
+  background: #15121b;
+  border-color: white;
+  box-shadow: 0 0 15px 2px grey, 0 0 12px 2px grey inset;
+  color: white;
+}
+
 .registerButtonGroup, .oldWebsiteButtonGroup{
   color: white;
-  font-family: prstartk;
+  background: #15121b;
+  padding: 10px;
+  font-family: games;
   display: inline-block;
   text-align: center;
   width: 300px;
@@ -151,13 +219,13 @@ body,html {
 
 /* About Section */
 #aboutTitle {
-  font-family: prstartk;
+  font-family: opensans;
   color: chocolate;
   font-size: 25px;
 }
 
 #aboutContent {
-  font-family: prstartk;
+  font-family: opensans;
   color: #D5DDE2;
   font-size: 20px;
   left: 500px;
@@ -182,18 +250,18 @@ body,html {
         text-align: center;
     }
     #CWRU { 
-        font-family: prstartk;
+        font-family: opensans;
         color: #218632;
         font-size: 15px;
     }
       
     #date {
-        font-family: prstartk;
+        font-family: opensans;
         color: #1B81AE;
         font-size: 15px;
     }
     #comingSoon {
-        font-family: prstartk;
+        font-family: opensans;
         color: #D5DDE2;
         font-size: 20px;
     }
