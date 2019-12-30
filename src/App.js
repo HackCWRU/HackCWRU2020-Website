@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Logo from './components/Logo.js';
-import Content from "./components/Content.js";
+import HeaderSection from "./components/HeaderSection";
 import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
-import Countdown from './components/Countdown.js';
-import About from './components/About.js';
+import {Countdown,About} from './components';
 
 class App extends Component{
   constructor(props){
@@ -19,7 +17,7 @@ class App extends Component{
       <div className = "App" >
         <section className = "introduction" style={{ backgroundImage: `url(${headerBackground})` }}>
           <Countdown HackDate = {this.state.HackDate} />
-          <Content />
+          <HeaderSection />
           <About />
         </section>
       </div>
