@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "description": "this is the website for hackCWRU 2020, theme: Retro Game ",
   "private": true,
-  "homepage": "http://HackCWRU.github.io/HackCWRU2020-Website/",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-scripts": "3.0.0"
   },
   "scripts": {
@@ -31,8 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
   }
 }
