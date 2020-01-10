@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import HeaderSection from "./components/HeaderSection";
-import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
+import FAQ from "./components/FAQ";
+import Schedule from "./components/Schedule";
+//import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
 import {Countdown,About} from './components';
 
@@ -15,10 +17,12 @@ class App extends Component{
   render() {
     return (
       <div className = "App" >
-        <section className = "introduction" style={{ backgroundImage: `url(${headerBackground})` }}>
+        <section className = "introduction">
           <Countdown HackDate = {this.state.HackDate} />
-          <HeaderSection />
-          <About />
+          <HeaderSection/>
+          <About/>
+          <FAQ/>
+          <Schedule/>
         </section>
       </div>
     );

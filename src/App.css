@@ -1,6 +1,25 @@
+:root {
+  --background:#172124;
+  --darkred:#971908;
+  --red:#FF1E01;
+  --darkblue:#0B3C61;
+  --blue:#0C66AC;
+  --darkgreen: #004F15 ; 
+  --green: #21AF31;
+  --lightyellow: #FFD96A;
+  --darkyellow: #BF9005;
+  --yellow: #FFC006;
+  --darkgrey: #172124;
+  --grey: #2F434A;
+}
 
 .App {
   padding: 0 50px;
+  overflow-x: initial;
+}
+
+.introduction{
+  z-index: -2;
 }
 
 .App-logo {
@@ -44,7 +63,8 @@
 }
 
 body {
-  background-image:url("./Assets/backgrounds/Header_Section_Background.svg");
+  /*background-image:url("./Assets/backgrounds/Header_Section_Background.svg");*/
+  background-color: #172124;
   background-repeat: repeat;
   background-size: cover;
 }
@@ -64,8 +84,19 @@ body,html {
 
 #countdownText {
   font-family: prstartk;
-  color: #F3DFDF;
+  color: #FFFFFF;
   font-size: 15px;
+}
+
+/** flexbox classes **/
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+.col2 {
+  flex: 2;
 }
 
 
@@ -79,8 +110,9 @@ body,html {
   text-align: center;
 }
 
-.headerMainContent {
+.HeaderSection {
   position: relative;
+  margin-bottom: 50px;
 }
 
 #CWRUTitle {
@@ -102,19 +134,21 @@ body,html {
 }
 .subTitleContainer{
   text-align: left;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.subTitleAndLogoContainer{
+  position: relative;
 }
 
 /** Text In .header **/
-#CWRU { 
-  font-family: opensans;
-  color: #218632;
-  font-size: 25px;
-}
-
-#date {
-  font-family: opensans;
-  color: #1B81AE;
-  font-size: 25px;
+.emphasisPixelText{
+  font-family: prstartk;
+  color: var(--yellow);
+  font-size: 20px;
+  padding: 15px 0;
 }
 
 #comingSoon {
@@ -132,8 +166,9 @@ body,html {
 
 .spartonLogo{
   position: relative;
-  height: 340px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .spartonLogo img {
@@ -149,36 +184,37 @@ body,html {
 button:focus {outline:0;}
 button:hover {cursor: pointer;}
 
+
 #registerBtn{
   font-family: games;
   letter-spacing: 4px;
-  font-size: 30px;
+  font-size: 40px;
   padding: 10px 20px;
   border-radius: 15px;
-  background: #15121b;
-  border-color: darkred;
+  background: none;
+  border-color: var(--darkred);
   border-width: 2px;
-  color: darkred;
+  color: var(--darkred);
   border-style: solid;
   transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
 }
 
 #registerBtn:hover{
-  text-shadow:0 0 10px red;
-  background: #15121b;
+  text-shadow:0 0 10px var(--red);
+  background: none;
   border-color: rgb(255, 193, 193);
-  box-shadow: 0 0 15px 2px red, 0 0 12px 2px red inset;
+  box-shadow: 0 0 15px 2px var(--red), 0 0 12px 2px var(--red) inset;
   color: rgb(255, 193, 193);
 }
 
 #oldWebsiteBtn{
   font-family: games;
   letter-spacing: 4px;
-  font-size: 30px;
+  font-size: 40px;
   text-shadow: 0;
   padding: 10px 20px;
   border-radius: 15px;
-  background: #15121b;
+  background: none;
   border-color: grey;
   box-shadow: 0;
   border-width: 2px;
@@ -189,7 +225,7 @@ button:hover {cursor: pointer;}
 
 #oldWebsiteBtn:hover{
   text-shadow:0 0 10px grey;
-  background: #15121b;
+  background: none;
   border-color: white;
   box-shadow: 0 0 15px 2px grey, 0 0 12px 2px grey inset;
   color: white;
@@ -197,12 +233,10 @@ button:hover {cursor: pointer;}
 
 .registerButtonGroup, .oldWebsiteButtonGroup{
   color: white;
-  background: #15121b;
   padding: 10px;
   font-family: games;
   display: inline-block;
   text-align: center;
-  width: 300px;
 }
 
 .registerButtonGroup img{
@@ -217,18 +251,285 @@ button:hover {cursor: pointer;}
   display: inline-block;
 }
 
-/* About Section */
-#aboutTitle {
+.bigClearText {
   font-family: opensans;
-  color: chocolate;
-  font-size: 25px;
+  color: #D5DDE2;
+  font-size: 35px;
+}
+
+/* skew title boxes CSS */
+
+.skewTitleBox{
+  display: inline-block;
+  margin: 0 0 15px 0;
+  padding: 10px 0px 10px 100px;
+  border: 5px solid var(--red);
+  background: var(--darkred);
+  font-family: prstartk;
+  transform: skewX(-20deg) translateX(-90px);
+  color: white;
+  font-size: 35px;
+  min-width: 40vw;
+  text-align: center;
+}
+
+.skewTitleBox div{
+  transform: skewX(20deg);
+}
+
+
+/* About Section */
+#AboutSection{
+  margin-bottom: 50px;
+}
+
+#AboutSection .skewTitleBox{
+  border: 5px solid var(--red);
+  background: var(--darkred);
 }
 
 #aboutContent {
   font-family: opensans;
   color: #D5DDE2;
-  font-size: 20px;
+  font-size: 35px;
   left: 500px;
+}
+
+#about {
+  padding: 50px 50px 50px 0;
+}
+
+#AboutGrid{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  padding: 0px 15px;
+}
+
+#AboutGrid .row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#AboutGrid .AboutGrid-Item-Container {
+  flex-basis: 50%;
+  -ms-flex: auto;
+  position: relative;
+  padding: 20px;
+  min-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#AboutGrid .AboutGrid-Item {
+  margin: auto;
+  display: flex;
+}
+
+
+/* FAQ section */
+#FAQSection{
+}
+#FAQBackgroundContainer{
+  position: relative;
+  margin: 0px -50px;
+}
+
+#waterFall{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+#FAQSection .skewTitleBox{
+  border: 5px solid var(--yellow);
+  background: var(--darkyellow);
+}
+
+#FAQBoxesContainer{
+  padding: 4%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#FAQBoxesGrid{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+#FAQBoxesGrid .row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#FAQBoxesGrid .FAQItem{
+  flex-basis: 33%;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+@media(max-width: 1024px) {
+  #FAQBoxesGrid .FAQItem{
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 600px) {
+  #FAQBoxesGrid .FAQItem{
+    flex-basis: 100%;
+  }
+}
+
+
+.FAQBox{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  background: var(--grey);
+  border: 5px solid var(--yellow);
+  border-radius: 15px;
+  -webkit-box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5); 
+  box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+
+
+.FAQBoxContent{
+  padding: 15px;
+}
+
+.FAQBoxContent .FAQQuestion, .FAQBoxContent .FAQAnswer {
+  font-family: opensans;
+  color: white;
+}
+
+.FAQBoxContent .FAQQuestion {
+  color: var(--yellow);
+  font-size: 22px;
+  font-weight: 1000;
+  margin-bottom: 15px;
+  text-shadow: black;
+}
+
+.FAQBoxContent .FAQAnswer{
+  font-size: 18px;
+}
+
+/* Schedule section classes*/
+
+#ScheduleSection .skewTitleBox{
+  border: 5px solid var(--green);
+  background: var(--darkgreen);
+}
+
+#ScheduleGrid .row{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#ScheduleGridContainer{
+  color: white;
+  display: flex;
+  padding: 25px 0;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Schedule-DayContainer{
+  flex-basis: 30%;
+  min-width: 300px;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.Schedule-DayContainer .Schedule-Day-Title{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.Schedule-DayContainer .Schedule-Day-ItemContainer{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.Schedule-Day-ItemContainer .Schedule-Day-Item{
+ width: 100%;
+ display: flex;
+ flex-wrap: nowrap;
+ flex-direction: row;
+}
+
+.Schedule-Day-Item .Schedule-Day-Item-Time, .Schedule-Day-Item .Schedule-Day-Item-EventName{
+  padding: 10px;
+  flex-basis: 50%;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.Schedule-Day-Item .Schedule-Day-Item-Time{
+  border-right: 2px solid var(--grey);
+  text-align: right;
+}
+
+.Schedule-Day-Item .Schedule-Day-Item-EventName{
+  text-align: left;
+}
+
+
+
+
+
+/* Classes for the offset highlight effect */
+.offsetHighlightRed::before, .offsetHighlightYellow::before, .offsetHighlightBlue::before, .offsetHighlightGreen::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: -10px;
+  background: white;
+  z-index: -1;
+}
+
+.offsetHighlightRed.topRight::before, .offsetHighlightYellow.topRight::before, .offsetHighlightBlue.topRight::before, .offsetHighlightGreen.topRight::before{
+  top: -5px;
+  left: 10px;
+}
+
+
+
+.offsetHighlightRed::before{
+  background: var(--darkred);
+}
+
+.offsetHighlightYellow::before{
+  background: var(--yellow);
+}
+.offsetHighlightBlue::before{
+  background: var(--blue);
+}
+.offsetHighlightGreen::before{
+  background: var(--darkgreen);
+}
+
+.offsetHighlightRed, .offsetHighlightYellow, .offsetHighlightBlue, .offsetHighlightGreen{
+  display: inline-block;
+  position: relative;
 }
 
 
@@ -238,27 +539,35 @@ button:hover {cursor: pointer;}
       position: relative;
       top: 120px;
     } */
+
+    .App{
+      padding: 0 15px;
+    }
+
+    #FAQBackgroundContainer{
+      margin: 0px -15px;
+    }
     
     #countdownText {
       font-family: prstartk;
-      color: #F3DFDF;
       font-size: 7px;
     }
     .header {
         position: relative;
-        padding: 10%;
         text-align: center;
     }
-    #CWRU { 
-        font-family: opensans;
-        color: #218632;
-        font-size: 15px;
+    #CWRU {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .spartonLogo img{
+      height: 200px;
     }
       
     #date {
-        font-family: opensans;
-        color: #1B81AE;
-        font-size: 15px;
+        font-size: 10px;
+        font-weight: bold;
     }
     #comingSoon {
         font-family: opensans;
