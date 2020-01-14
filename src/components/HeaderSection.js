@@ -8,19 +8,28 @@ import Logo from './Logo.js';
 class HeaderSection extends Component {
     render() {
         return (
-          <div className = "headerMainContent" >
+          <div className = "HeaderSection" >
             <div className = "header">
               <div className = "titleContainer">
                 <div className = "mainTitleContainer">
                   <img id = "CWRUTitle" src =  {hackCWRUTitle} alt = "The HackCWRU7 Title"/>
                 </div>
-                
-                <div className = "subTitleContainer">
-                  <img id = "subTitle"  src = {subTitle} alt = "The 2020 subtitle" />
-                  <h2 id = "CWRU">Case Western Reserve University</h2>
-                  <h2 id = "date">February 9-11th 2020 </h2>
+                <div className = "subTitleAndLogoContainer">
+                  <Logo/>
+                  <div className = "subTitleContainer">
+                  <div class="flex-grid">
+                    <div class="col">
+                      <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
+                      <div id = "date" className = "bigClearText">February 9-11th 2020 </div>
+                    </div>
+                    <div class="col">
+                      <img id = "subTitle"  src = {subTitle} alt = "The 2020 subtitle"/>
+                    </div>
+                  </div>
+                    
+                    
+                  </div>
                 </div>
-                <Logo/>
               </div>
               
             </div>
@@ -31,7 +40,6 @@ class HeaderSection extends Component {
               <div className = "oldWebsiteButtonGroup">
                 <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2019 website</button></a>
               </div>
-              <h1 id = "comingSoon"> Coming Soon...! </h1>
             </div>
           </div>
         );
