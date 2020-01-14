@@ -7,6 +7,7 @@ import Logo from './Logo.js';
 
 class HeaderSection extends Component {
     render() {
+      var hackerApplicationLink = encodeURIComponent("https://hackcwru.info/");
         return (
           <div className = "HeaderSection" >
             <div className = "header">
@@ -20,7 +21,7 @@ class HeaderSection extends Component {
                   <div class="flex-grid">
                     <div class="col">
                       <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
-                      <div id = "date" className = "bigClearText">February 9-11th 2020 </div>
+                      <div id = "date" className = "bigClearText">February 7-9th 2020</div>
                     </div>
                     <div class="col">
                       <img id = "subTitle"  src = {subTitle} alt = "The 2020 subtitle"/>
@@ -35,7 +36,7 @@ class HeaderSection extends Component {
             </div>
             <div className= "headerButtonSection">
               <div className = "registerButtonGroup">
-                <a href="http://hack.cwru.edu/"><button id="registerBtn">Register</button></a>
+                <a href={"https://my.mlh.io/oauth/authorize?client_id=92a0cd65f23af7c66fdf0aae482d48eda0b85a0f8c19631a5ddd4294361f0582&redirect_uri=" + hackerApplicationLink + "&response_type=token"}><button id="registerBtn">Register</button></a>
               </div>
               <div className = "oldWebsiteButtonGroup">
                 <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2019 website</button></a>
