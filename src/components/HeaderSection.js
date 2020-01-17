@@ -1,13 +1,35 @@
 import React, { Component } from 'react';
+import Button from 'react';
 import hackCWRUTitle from '../Assets/Title.svg';
 import subTitle from '../Assets/Subtitle 2020.svg';
 //import redButtonUp from '../Assets/register button up.svg';
 //import whiteButtonUp from '../Assets/white button up.svg';
 import Logo from './Logo.js';
+import CoCPopUp from './CoCPopUp';
 
 class HeaderSection extends Component {
+
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      showCodeOfConductBox: false,
+    };
+    this._onButtonClick = this._onButtonClick.bind(this);
+    this.CoCBox = <CoCPopUp/>;
+  }
+  
+
+  _onButtonClick() {
+    this.setState({
+      showCodeOfConductBox: ! this.state.showCodeOfConductBox,
+    });
+  }
+
+  
+
     render() {
-      var hackerApplicationLink = encodeURIComponent("http://hackcwru.info");
+      var returnLink = encodeURIComponent("http://hackcwru.info");
         return (
           <div className = "HeaderSection" >
             <div className = "header">
@@ -36,7 +58,11 @@ class HeaderSection extends Component {
             </div>
             <div className= "headerButtonSection">
               <div className = "registerButtonGroup">
-                <a href={"https://my.mlh.io/oauth/authorize?client_id=92a0cd65f23af7c66fdf0aae482d48eda0b85a0f8c19631a5ddd4294361f0582&redirect_uri=" + hackerApplicationLink + "&response_type=token"}><button id="registerBtn">Register</button></a>
+              
+              <button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>
+              {/* {(this.state.showCodeOfConductBox) ? this.CoCBox : ''} */}
+              <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
+                        _onButtonClick={this._onButtonClick.bind(this)} />
               </div>
               <div className = "oldWebsiteButtonGroup">
                 <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2019 website</button></a>
