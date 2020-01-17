@@ -6,19 +6,30 @@ import subTitle from '../Assets/Subtitle 2020.svg';
 //import whiteButtonUp from '../Assets/white button up.svg';
 import Logo from './Logo.js';
 import CoCPopUp from './CoCPopUp';
+import Confirmation from './Confirmation';
+import { Redirect } from 'react-router-dom';
 
 class HeaderSection extends Component {
 
 
   constructor(props) {
     super(props);
+    const {signUpConfirmation} = this.props
     this.state = {
       showCodeOfConductBox: false,
+      signUpConfirmation,
+      redirectToMain: false,
     };
     this._onButtonClick = this._onButtonClick.bind(this);
     this.CoCBox = <CoCPopUp/>;
   }
   
+  finishSignUp() {
+    this.setState({
+      signUpConfirmation: ! this.state.signUpConfirmation,
+      redirectToMain: true,
+    });
+  }
 
   _onButtonClick() {
     this.setState({
@@ -30,7 +41,11 @@ class HeaderSection extends Component {
 
     render() {
       var returnLink = encodeURIComponent("http://hackcwru.info");
-        return (
+        
+      if(this.state.redirectToMain)
+        return <Redirect to='/'/>
+
+      return(
           <div className = "HeaderSection" >
             <div className = "header">
               <div className = "titleContainer">
@@ -57,13 +72,20 @@ class HeaderSection extends Component {
               
             </div>
             <div className= "headerButtonSection">
+              <div className ="confirmation">
+                <Confirmation signUpConfirmation={this.state.signUpConfirmation}
+                  finishSignUp={this.finishSignUp.bind(this)} />
+
+              </div>
+
               <div className = "registerButtonGroup">
               
               <button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>
-              {/* {(this.state.showCodeOfConductBox) ? this.CoCBox : ''} */}
               <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
                         _onButtonClick={this._onButtonClick.bind(this)} />
               </div>
+
+
               <div className = "oldWebsiteButtonGroup">
                 <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2019 website</button></a>
               </div>

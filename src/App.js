@@ -5,6 +5,7 @@ import Schedule from "./components/Schedule";
 //import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
 import {Countdown,About} from './components';
+import {Switch, BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component{
   constructor(props){
@@ -16,17 +17,24 @@ class App extends Component{
 
   render() {
     return (
-      <root>
+      <React.Fragment>
+      <Router>
         <div className = "App" >
-          <section>
-            <Countdown HackDate = {this.state.HackDate} />
-            <HeaderSection/>
-            <About/>
-            <FAQ/>
-
+              <Countdown HackDate = {this.state.HackDate} />
+              <Switch>
+                <Route key="home" path="/" exact strict render={() => (
+                  <HeaderSection signUpConfirmation={false}/>   
+                  )}/>/>
+                <Route key="finishSignUp" path="/confirm" exact strict render={() => (
+                  <HeaderSection signUpConfirmation={true}/>   
+                  )}/>/>
+              </Switch>
+              <About/>
+              <FAQ/>
+           
             { /*<Schedule/>*/}
-          </section>
         </div>
+        </Router>
         {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}
         <script src="/__/firebase/7.6.2/firebase-app.js"></script>
 
@@ -35,7 +43,8 @@ class App extends Component{
 
         {/*<!-- Initialize Firebase -->*/}
         <script src="/__/firebase/init.js"></script>
-      </root>
+        </React.Fragment>
+      
     );
   }
 }
