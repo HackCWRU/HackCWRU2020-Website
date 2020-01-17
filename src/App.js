@@ -23,7 +23,8 @@ class App extends Component{
             <HeaderSection/>
             <About/>
             <FAQ/>
-            <Schedule/>
+
+            { /*<Schedule/>*/}
           </section>
         </div>
         {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}

@@ -7,7 +7,7 @@ import Logo from './Logo.js';
 
 class HeaderSection extends Component {
     render() {
-      var hackerApplicationLink = encodeURIComponent("https://hackcwru.info/");
+      var hackerApplicationLink = encodeURIComponent("http://hackcwru.info");
         return (
           <div className = "HeaderSection" >
             <div className = "header">
