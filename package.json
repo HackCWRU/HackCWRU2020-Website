@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "description": "this is the website for hackCWRU 2020, theme: Retro Game ",
   "private": true,
+  "homepage": "https://hackcwru2020-web.firebaseapp.com",
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.0.0"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.0",
+    "@material-ui/core": "4.7.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
+//import ScheduleFile from'./ScheduleByDay.txt';
 
 class Schedule extends Component{
     
     render(){
+        // const readline = require('readline');
+        // const fs = require('fs');
+
+        // const readInterface = readline.createInterface({
+        //     input: fs.createReadStream('/path/to/file'),
+        //     output: process.stdout,
+        //     console: false
+        // });
+
+        // readInterface.on('line', function(line) {
+        //     console.log(line);
+        // });
+
         return (
             <div id = "ScheduleSection" >
                 <div className = "skewTitleBox">

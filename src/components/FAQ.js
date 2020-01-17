@@ -18,7 +18,7 @@ class FAQ extends Component{
                     <div id ="FAQBoxesGrid">
                         <div className="row">
                             <div class="FAQItem">
-                                <FAQBox question={"Where will HackCWRU 6 take place?"} answer={"Hackers will be working in CWRU's Sears Think[box]. Attendees can check in at the Veale Center lobby, 2138 Adelbert Rd, Cleveland, OH 44106."}/>
+                                <FAQBox question={"Where will HackCWRU 2020 take place?"} answer={"Hackers will be working in CWRU's Sears think[box]. Attendees can check in at the Veale Center lobby, 2138 Adelbert Rd, Cleveland, OH 44106."}/>
                             </div>
                             <div class="FAQItem">
                                 <FAQBox question={"Who can attend?"} answer={"Anyone currently enrolled in a high school, undergraduate, or graduate program can attend."}/>

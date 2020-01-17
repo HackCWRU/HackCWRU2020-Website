@@ -253,6 +253,21 @@ button:hover {cursor: pointer;}
   font-size: 35px;
 }
 
+/* Code of Conduct (CoC) box classes */
+#CoCPopUp-Container{  
+  font-size: 25px;
+  border: solid 2px var(--red);
+  color: white;
+  background-color: var(--background);
+  text-align: center;
+  padding: 20px;
+}
+
+.CocFormGroup{
+  justify-content: center;
+}
+
+
 /* skew title boxes CSS */
 
 .skewTitleBox{
