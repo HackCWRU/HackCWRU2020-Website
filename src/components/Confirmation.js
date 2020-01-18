@@ -21,7 +21,7 @@ class Confirmation extends Component{
     }
 
     render(){
-        var returnLink = encodeURIComponent("http://hackcwru.info/");
+        var returnLink = encodeURIComponent("http://hackcwru.info/confirm");
         var CoCLink = <a href={encodeURIComponent("https://static.mlh.io/docs/mlh-code-of-conduct.pdf")}>MLH Code of Conduct</a>;
         return (
             <Dialog
