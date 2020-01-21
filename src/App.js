@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderSection from "./components/HeaderSection";
+import SponsorshipSection from "./components/SponsorshipSection";
 import FAQ from "./components/FAQ";
 import Schedule from "./components/Schedule";
 //import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
@@ -25,6 +26,7 @@ class App extends Component{
             <FAQ/>
 
             { /*<Schedule/>*/}
+            <SponsorshipSection/>
           </section>
         </div>
         {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}
