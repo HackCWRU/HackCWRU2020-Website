@@ -267,6 +267,10 @@ button:hover {cursor: pointer;}
   justify-content: center;
 }
 
+.MuiFormControlLabel-root{
+  justify-content: center;
+}
+
 
 /* skew title boxes CSS */
 
@@ -343,6 +347,7 @@ button:hover {cursor: pointer;}
 
 /* FAQ section */
 #FAQSection{
+  margin-bottom: 50px;
 }
 #FAQBackgroundContainer{
   position: relative;
