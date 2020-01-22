@@ -45,17 +45,17 @@
 
 @font-face {
   font-family: prstartk;
-  src: url("./Assets/font/prstartk.ttf");
+  src: url("./Assets/font/prstartk.ttf") format('truetype');
 }
 
 @font-face {
   font-family: games;
-  src: url("./Assets/font/Games.ttf");
+  src: url("./Assets/font/Games.ttf") format('truetype');
 }
 
 @font-face {
   font-family: opensans;
-  src: url("./Assets/font/OpenSans-Regular.ttf");
+  src: url("./Assets/font/OpenSans-Regular.ttf") format('truetype');
 }
 
 body {
@@ -264,10 +264,6 @@ button:hover {cursor: pointer;}
 }
 
 .CocFormGroup{
-  justify-content: center;
-}
-
-.MuiFormControlLabel-root{
   justify-content: center;
 }
 
