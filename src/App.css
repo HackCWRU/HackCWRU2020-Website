@@ -60,7 +60,7 @@
 
 body {
   /*background-image:url("./Assets/backgrounds/Header_Section_Background.svg");*/
-  background-color: #172124;
+  background-color: #15121B;
   background-repeat: repeat;
   background-size: cover;
 }
@@ -69,6 +69,30 @@ body,html {
   margin: 0px;
   padding: 0px;
   height: 100%;
+}
+
+/* scrollbar classes */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  text-align: center;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkblue);
+  border-radius: 10px;
+  transition: background-color .8s ;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue);
+  border-radius: 10px;
 }
 
   /** Count Down Line **/
@@ -100,15 +124,43 @@ body,html {
   These are the content related css files
   **/
 
+
+/* classes for all sections */
+#AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection{
+  margin-bottom: 70px;
+} 
+
+/* classses for the parallax stars effect */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--back {
+  height: 200%;
+  background-image:url("./Assets/backgrounds/Header_Section_Background.svg");
+  background-repeat: repeat;
+  background-position: center;
+  transform: translateZ(-3px) scale(5);
+}
+
   
+/* header section css */
 .header {
   position: relative;
   text-align: center;
 }
 
-.HeaderSection {
+#HeaderSection {
   position: relative;
-  margin-bottom: 50px;
 }
 
 #CWRUTitle {
@@ -122,17 +174,47 @@ body,html {
 
 #subTitle {
   margin-top: 15px;
-  width: 40%;
+  width: 100%;
   height: auto;
-  position: absolute;
   right: 0px;
-
 }
+
+@media(max-width: 600px) {
+  #subTitle {
+    margin-top: 5px;
+  }
+}
+
+
 .subTitleContainer{
   text-align: left;
-  position: absolute;
-  top: 0;
-  width: 100%;
+}
+
+.subTitleGrid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+
+@media(max-width:1096px){
+  .subTitleGrid div{
+    flex-basis: 100%;
+  }
+
+  #year img{
+    width: 35%;
+  }
+
+  #headerInfo{
+    text-align: center;
+  }
+}
+
+
+#year{
+  text-align: right;
+  width: 35%;
 }
 
 .subTitleAndLogoContainer{
@@ -188,9 +270,9 @@ button:hover {cursor: pointer;}
   padding: 10px 20px;
   border-radius: 15px;
   background: none;
-  border-color: var(--darkred);
+  border-color: var(--red);
   border-width: 2px;
-  color: var(--darkred);
+  color: var(--red);
   border-style: solid;
   transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
 }
@@ -253,6 +335,14 @@ button:hover {cursor: pointer;}
   font-size: 35px;
 }
 
+@media(max-width: 600px) {
+  .bigClearText {
+    font-size: 25px;
+  }
+}
+
+
+
 /* Code of Conduct (CoC) box classes */
 #CoCPopUp-Container{  
   font-size: 25px;
@@ -288,15 +378,20 @@ button:hover {cursor: pointer;}
   text-align: center;
 }
 
+@media(max-width: 600px) {
+  .skewTitleBox{
+    font-size: 25px;
+    min-width: 70vw;
+  }
+}
+
 .skewTitleBox div{
   transform: skewX(20deg);
 }
 
 
 /* About Section */
-#AboutSection{
-  margin-bottom: 50px;
-}
+
 
 #AboutSection .skewTitleBox{
   border: 5px solid var(--red);
@@ -526,36 +621,37 @@ button:hover {cursor: pointer;}
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 25px 0;
 }
 
-.SponsorGrid-Item{
-  flex-basis: 150px;
-  display: flex;
-  min-width: 200px;
-  max-width: 400px;
-  padding: 10px;
-  justify-content: center;
 
+.SponsorGrid-Item{
+    display: flex;
+    flex-basis: 300px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .SponsorGrid-Item div{
   width: 100%;
-  height: 100%;
-  
-  box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5);
 }
 
-.topTierSponsor {
-  flex-basis: 30%;
-  min-width: 250px;
-  max-width: 500px;
-  display: flex;
-}
-
-.topTierSponsor img {
+#SponsorGrid div img{
   width: 100%;
-  height: 100%;
+  transition: filter .25s ease-in-out;
+  -webkit-filter: grayscale(100%) contrast(20%) brightness(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%) contrast(20%) brightness(50%); /* FF 35+ */
 }
+
+#SponsorGrid div img:hover{
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+
+
+
 
 
 
@@ -623,19 +719,12 @@ button:hover {cursor: pointer;}
         position: relative;
         text-align: center;
     }
-    #CWRU {
-        font-size: 10px;
-        font-weight: bold;
-    }
 
     .spartonLogo img{
       height: 200px;
     }
       
-    #date {
-        font-size: 10px;
-        font-weight: bold;
-    }
+    
     #comingSoon {
         font-family: opensans;
         color: #D5DDE2;
