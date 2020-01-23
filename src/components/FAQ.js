@@ -6,9 +6,9 @@ class FAQ extends Component{
     render(){
         return (
             <div id = "FAQSection">
-                <div id="FAQBackgroundContainer">
+                {/*<div id="FAQBackgroundContainer">
                     <img id = "waterFall" src= {waterFall}></img>
-                </div>
+                </div>*/}
                 <div className = "skewTitleBox">
                     <div>
                         FAQ

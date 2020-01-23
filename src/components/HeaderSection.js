@@ -46,27 +46,25 @@ class HeaderSection extends Component {
         return <Redirect to='/'/>
 
       return(
-          <div className = "HeaderSection" >
+          <div id = "HeaderSection" >
             <div className = "header">
               <div className = "titleContainer">
                 <div className = "mainTitleContainer">
                   <img id = "CWRUTitle" src =  {hackCWRUTitle} alt = "The HackCWRU7 Title"/>
                 </div>
                 <div className = "subTitleAndLogoContainer">
-                  <Logo/>
                   <div className = "subTitleContainer">
-                  <div class="flex-grid">
-                    <div class="col">
-                      <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
-                      <div id = "date" className = "bigClearText">February 7-9th 2020</div>
-                    </div>
-                    <div class="col">
-                      <img id = "subTitle"  src = {subTitle} alt = "The 2020 subtitle"/>
+                    <div class="subTitleGrid">
+                      <div id="headerInfo">
+                        <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
+                        <div id = "date" className = "bigClearText">February 7-9th 2020</div>
+                      </div>
+                      <div id="year">
+                        <img id = "subTitle"  src = {subTitle} alt = "A stylized 2020"/>  
+                      </div>
                     </div>
                   </div>
-                    
-                    
-                  </div>
+                  <Logo/>
                 </div>
               </div>
               
