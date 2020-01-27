@@ -81,6 +81,7 @@ import HeaderSection from "./components/HeaderSection";
 import SponsorshipSection from "./components/SponsorshipSection";
 import FAQ from "./components/FAQ";
 import Schedule from "./components/Schedule";
+import TracksSection from "./components/TracksSection";
 //import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
 import {Countdown,About} from './components';
@@ -118,6 +119,7 @@ class App extends Component{
                 </Switch>
                 <About/>
                 <FAQ/>
+                <TracksSection/>
                 {/* <Schedule/> */}
                 <SponsorshipSection/>
               </div>

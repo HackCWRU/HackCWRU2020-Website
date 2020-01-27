@@ -1,5 +1,5 @@
 :root {
-  --background:#172124;
+  --background:#000D1A;
   --darkred:#971908;
   --red:#FF1E01;
   --darkblue:#0B3C61;
@@ -24,7 +24,7 @@
   pointer-events: none;
 }
 .App-header {
-  background-color: #282c34;
+  background-color: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@
 
 body {
   /*background-image:url("./Assets/backgrounds/Header_Section_Background.svg");*/
-  background-color: #15121B;
+  background-color: var(--background);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -81,6 +81,7 @@ body,html {
 /* Track */
 ::-webkit-scrollbar-track {
   text-align: center;
+  background-color: var(--background);
 }
 
 /* Handle */
@@ -133,7 +134,7 @@ body,html {
 
 
 /* classes for all sections */
-#AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection{
+#AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection, #TracksSection{
   margin-bottom: 70px;
 } 
 
@@ -154,21 +155,21 @@ body,html {
 
 .parallax__layer--far {
   height: 300%;
-  background-image:url("./Assets/backgrounds/Header_Section_Background.svg");
+  background-image:url("./Assets/backgrounds/transparent_star_layer.svg");
   background-repeat: repeat;
   background-position: center;
-  background-size: 75%;
-  transform: translateZ(-6px) scale(7);
+  background-size: 65%;
+  transform: translateZ(-10px) scale(13);
   z-index: -1;
 }
 
 .parallax__layer--close {
   height: 300%;
   background-image:url("./Assets/backgrounds/transparent_star_layer.svg");
-  background-size: 75%;
+  background-size: 90%;
   background-repeat: repeat;
   background-position: center;
-  transform: translateZ(-4px) scale(6);
+  transform: translateZ(-6px) scale(7.5);
   z-index: -1;
 }
 
@@ -462,9 +463,6 @@ button:hover {cursor: pointer;}
 
 
 /* FAQ section */
-#FAQSection{
-  margin-bottom: 50px;
-}
 #FAQBackgroundContainer{
   position: relative;
   margin: 0px -50px;
@@ -674,6 +672,116 @@ button:hover {cursor: pointer;}
 #SponsorGrid div img:hover{
   -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(0%); /* FF 35+ */
+}
+
+
+
+/* Classes for the tracks section */
+#tracksHeader{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 25px;
+}
+
+#tracksGrid{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 0px 15px;
+}
+
+#tracksBoxesContainer{
+  padding: 4%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media(max-width:600px){
+  #tracksBoxesContainer{
+    padding: 4%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+#tracksBoxesGrid{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+#tracksBoxesGrid .row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#tracksBoxesGrid .tracksItem{
+  flex-basis: 25%;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+@media(max-width: 1024px) {
+  #tracksBoxesGrid .tracksItem{
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 600px) {
+  #tracksBoxesGrid .tracksItem{
+    flex-basis: 100%;
+  }
+}
+
+
+.tracksBox{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  background: var(--darkgrey);
+  border-radius: 15px;
+  -webkit-box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5); 
+  box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+
+
+.tracksBoxContent{
+  padding: 15px;
+}
+
+.tracksBoxContent .tracksTitle, .tracksBoxContent .tracksDescription {
+  font-family: opensans;
+  color: white;
+}
+
+.tracksBoxContent .tracksTitle {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 1000;
+  margin-bottom: 15px;
+  text-shadow: black;
+}
+
+.tracksBoxContent .tracksDescription{
+  font-size: 20px;
+}
+
+.tracksIcon{
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+@media(max-width: 600px){
+  .tracksIcon{
+    padding: 25px;
+  }
 }
 
 
