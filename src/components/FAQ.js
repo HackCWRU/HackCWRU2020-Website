@@ -14,7 +14,7 @@ class FAQ extends Component{
                         FAQ
                     </div>
                 </div>
-                <div className="flex-grid" id = "FAQBoxesContainer">
+                <div id = "FAQBoxesContainer">
                     <div id ="FAQBoxesGrid">
                         <div className="row">
                             <div class="FAQItem">
