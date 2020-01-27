@@ -14,9 +14,9 @@ class Countdown extends Component{
     render(){
         const {timeLeft} = this.state;
         return (
-            <div className = "countdown">
-                <h3 id = "countdownText"> COUNTDOWN TO HACKCWRU 2020:   &nbsp;
-                                          {timeLeft}</h3>
+            <div id = "countdown">
+                <div id = "countdownTitle"> COUNTDOWN TO HACKCWRU 2020: </div>
+                <div id = "countdownNumbers">&nbsp;{timeLeft}</div>
             </div>
         )
     }
@@ -50,9 +50,15 @@ class Countdown extends Component{
             if(days === 0 && hours === 0 && minutes === 0 && seconds === 0)
                 result = "On Going";
             else 
-                result = days + " : " + hours + " : " + minutes + " : " + seconds;
+                result = days + " : " + this.zeroPad(hours,2) + " : " + this.zeroPad(minutes,2) + " : " + this.zeroPad(seconds,2);
         
             return result; 
+    }
+
+    zeroPad(num, size) {
+        var s = num+"";
+        while (s.length < size) s = "0" + s;
+        return s;
     }
 
    

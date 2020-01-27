@@ -13,12 +13,12 @@ class About extends Component{
                     <div className = "row">
                         <div class="AboutGrid-Item-Container">
                             <div class="AboutGrid-Item">
-                                <div className = "bigClearText"> <div className = "offsetHighlightBlue">HackCWRU</div> is Case Western Reserve University’s annual <div className = "offsetHighlightRed topRight"> hackathon.</div></div>
+                                <div className = "bigClearText">HackCWRU is Case Western Reserve University’s annual hackathon.</div>
                             </div>
                         </div>
                         <div class="AboutGrid-Item-Container">
                             <div className="AboutGrid-Item">
-                                <div className = "bigClearText">Groups of 1 - 4 members have 36 hours to make a technology project in one of four project tracks and <div className="offsetHighlightGreen topRight">win prizes.</div></div>
+                                <div className = "bigClearText">Groups of 1 - 4 members have 36 hours to make a technology project in one of four project tracks and win prizes.</div>
                             </div>
                         </div>
                     </div>
