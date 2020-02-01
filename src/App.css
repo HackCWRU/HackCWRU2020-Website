@@ -169,8 +169,19 @@ body,html {
   background-size: 90%;
   background-repeat: repeat;
   background-position: center;
-  transform: translateZ(-6px) scale(7.5);
+  transform: translateZ(-6px) scale(7.5) rotateY(180deg);
   z-index: -1;
+}
+
+@media(max-width:600px){
+  .parallax__layer--far {
+    background-size: 200%;
+    transform: translateZ(-10px) scale(11);
+  }
+  
+  .parallax__layer--close {
+    background-size: 220%;
+  }
 }
 
   
@@ -659,6 +670,7 @@ button:hover {cursor: pointer;}
 @media(max-width:600px){
   .SponsorGrid-Item{
     max-height: 100px;
+    max-width: 225px;
 }
 }
 
@@ -667,6 +679,13 @@ button:hover {cursor: pointer;}
   transition: filter .25s ease-in-out;
   -webkit-filter: grayscale(100%) contrast(20%) brightness(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(100%) contrast(20%) brightness(50%); /* FF 35+ */
+}
+
+@media(max-width:600px){
+  #SponsorGrid div img{
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+  }
 }
 
 #SponsorGrid div img:hover{
@@ -733,6 +752,7 @@ button:hover {cursor: pointer;}
 @media(max-width: 600px) {
   #tracksBoxesGrid .tracksItem{
     flex-basis: 100%;
+    max-width: 250px;
   }
 }
 
@@ -747,6 +767,12 @@ button:hover {cursor: pointer;}
   border-radius: 15px;
   -webkit-box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5); 
   box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+
+@media(max-width:600px){
+  .tracksBox{
+    height: unset;
+  }
 }
 
 
