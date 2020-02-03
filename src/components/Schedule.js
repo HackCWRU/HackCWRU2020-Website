@@ -143,7 +143,7 @@ class Schedule extends Component{
                             </div>
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
-                                    1:015 AM
+                                    1:15 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
                                     Ping Pong Tournament
