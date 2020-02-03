@@ -458,6 +458,7 @@ button:hover {cursor: pointer;}
 #AboutGrid .AboutGrid-Item-Container {
   flex-basis: 50%;
   -ms-flex: auto;
+  flex: auto;
   position: relative;
   padding: 20px;
   min-width: 300px;
@@ -845,11 +846,6 @@ button:hover {cursor: pointer;}
   left: -10px;*/
   background: white;
   z-index: -1;
-}
-
-.offsetHighlightRed.topRight::before, .offsetHighlightYellow.topRight::before, .offsetHighlightBlue.topRight::before, .offsetHighlightGreen.topRight::before{
-  /*top: -5px;
-  left: 10px;*/
 }
 
 
