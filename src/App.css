@@ -630,6 +630,16 @@ button:hover {cursor: pointer;}
   text-align: left;
 }
 
+@media(max-width:600px){
+  .Schedule-Day-Item .Schedule-Day-Item-Time, .Schedule-Day-Item .Schedule-Day-Item-EventName{
+    font-size: 18px;
+  }
+
+  .Schedule-DayContainer .Schedule-Day-Title{
+    font-size: 22px;
+  }
+}
+
 /* classes for the sponsorship section*/
 
 #SponsorshipSection{

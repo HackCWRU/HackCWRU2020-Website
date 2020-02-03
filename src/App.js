@@ -120,7 +120,7 @@ class App extends Component{
                 <About/>
                 <FAQ/>
                 <TracksSection/>
-                {/* <Schedule/> */}
+                <Schedule/>
                 <SponsorshipSection/>
               </div>
 
