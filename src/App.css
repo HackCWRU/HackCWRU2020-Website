@@ -822,6 +822,47 @@ button:hover {cursor: pointer;}
 }
 
 
+/* Classess for Devpost Button */
+#DevpostButton{
+  position: absolute;
+  bottom:0;
+  right:0;
+  width:300px;
+  padding: 15px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+@media(max-width:600px){
+  #DevpostButton{
+    width:100%;
+    right: unset;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #devpostLogo{
+    max-width: 200px;
+  }
+}
+
+#devpostLogo{
+  width: 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px  rgba(0,0,0,0.5));
+  filter: drop-shadow(-5px 5px 5px  rgba(0,0,0,0.5));
+  transition: .08s filter ease-in-out;
+  -webkit-transition: .08s filter ease-in-out;
+  cursor: pointer;
+}
+
+
+
+#devpostLogo:hover{
+  -webkit-filter: drop-shadow(5px 5px 5px #000000) brightness(150%);
+  filter: drop-shadow(-5px 5px 5px #000000) brightness(150%);
+}
+
+
 
 
 
