@@ -82,6 +82,7 @@ import SponsorshipSection from "./components/SponsorshipSection";
 import FAQ from "./components/FAQ";
 import Schedule from "./components/Schedule";
 import TracksSection from "./components/TracksSection";
+import DevpostButton from "./components/DevpostButton";
 //import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
 import {Countdown,About} from './components';
@@ -97,17 +98,21 @@ class App extends Component{
 
   render() {
     return (
-
-
+      
+      <Router>
+            <root>
+            <DevpostButton/>
       <div class="parallax">
+        
         <div class="parallax__layer parallax__layer--far"></div>
         <div class="parallax__layer parallax__layer--close"></div>
 
 
-          <Router>
-            <root>
+          
+            
 
               <div className = "App" >
+                
                 <Countdown HackDate = {this.state.HackDate} />
                 <Switch>
                   <Route key="home" path="/" exact strict render={() => (
@@ -133,11 +138,14 @@ class App extends Component{
               {/*<!-- Initialize Firebase -->*/}
               <script src="/__/firebase/init.js"></script>
 
+
+              </div>
+
             </root>
           </Router>
 
         
-      </div>
+      
     );
   }
 }
