@@ -707,12 +707,31 @@ button:hover {cursor: pointer;}
 
 
 /* Classes for the tracks section */
-#tracksHeader{
+#tracksHeader, #prizesMessage{
   color: white;
   font-size: 30px;
   text-align: center;
   padding: 25px;
 }
+
+#prizesMessage a:link{
+  font-weight: 1000;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+#prizesMessage a:visited{
+  font-weight: 1000;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+#prizesMessage a:hover, #prizesMessage a:active{
+
+  color:var(--blue);
+  text-decoration: underline;
+}
+
 
 #tracksGrid{
   width: 100%;
