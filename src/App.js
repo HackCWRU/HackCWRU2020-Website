@@ -123,8 +123,8 @@ class App extends Component{
                       )}/>/>
                 </Switch>
                 <About/>
-                <FAQ/>
                 <TracksSection/>
+                <FAQ/>
                 <Schedule/>
                 <SponsorshipSection/>
               </div>

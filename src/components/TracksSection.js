@@ -11,7 +11,7 @@ class TracksSection extends Component{
     render(){
         return (
             <div id = "TracksSection" >
-               <div id = "tracksHeader">
+                <div id = "tracksHeader">
                     Each team can do a project in any of our four project tracks.
                 </div>
                 <div id = "tracksBoxesContainer">
@@ -32,6 +32,9 @@ class TracksSection extends Component{
                         </div>
                         
                     </div>
+                </div>
+                <div id = "prizesMessage" className="bigClearText">
+                    Check out the HackCWRU2020 <a href="https://hackcwru-2020.devpost.com/">Devpost</a> to see our prizes and judges.
                 </div>
             </div>
         )
