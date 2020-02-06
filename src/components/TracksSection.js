@@ -18,16 +18,16 @@ class TracksSection extends Component{
                     <div id ="tracksBoxesGrid">
                         <div className="row">
                             <div class="tracksItem">
-                                <TrackBox title={"FinTech"} icon={FinTechIcon} description={"Projects that intersect with finance, banking or economics."}/>
+                                <TrackBox title={"FinTech"} icon={FinTechIcon} description={"Projects that intersect with finance, banking or economics."} altText={"A coin icon representing the Financial Technology project track"}/>
                             </div>
                             <div class="tracksItem">
-                                <TrackBox title={"Civic"} icon={IoTIcon} description={"Projects involving smart devices and the data they generate."}/>
+                                <TrackBox title={"Civic"} icon={IoTIcon} description={"Projects involving smart devices and the data they generate."} altText={"A house icon representing the Civic project track"}/>
                             </div>
                             <div class="tracksItem">
-                                <TrackBox title={"Health"} icon={HealthIcon} description={"Projects based in health IT, public health, or bioinformatics."}/>
+                                <TrackBox title={"Health"} icon={HealthIcon} description={"Projects based in health IT, public health, or bioinformatics."} altText={"An icon representing the Health project track."}/>
                             </div>
                             <div class="tracksItem">
-                                <TrackBox title={"Maker"} icon={MakerIcon} description={"Projects that embody the DIY maker spirit."}/>
+                                <TrackBox title={"Maker"} icon={MakerIcon} description={"Projects that embody the DIY maker spirit."} altText={"A hammer icon representing the Maker project track."}/>
                             </div>
                         </div>
                         
