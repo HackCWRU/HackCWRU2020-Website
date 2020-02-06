@@ -101,15 +101,12 @@ class App extends Component{
       
       <Router>
             <root>
+              
             <DevpostButton/>
       <div class="parallax">
         
         <div class="parallax__layer parallax__layer--far"></div>
         <div class="parallax__layer parallax__layer--close"></div>
-
-
-          
-            
 
               <div className = "App" >
                 

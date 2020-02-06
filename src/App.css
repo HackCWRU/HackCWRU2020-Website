@@ -134,7 +134,7 @@ body,html {
 
 
 /* classes for all sections */
-#AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection, #TracksSection{
+#AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection, #ScheduleSection, #TracksSection{
   margin-bottom: 70px;
 } 
 
@@ -202,6 +202,8 @@ body,html {
 .titleContainer {
   width: 100%;
   position: relative;
+  box-sizing: border-box;
+  padding: 0 25px;
 }
 
 #subTitle {
@@ -587,7 +589,7 @@ button:hover {cursor: pointer;}
 }
 
 .Schedule-DayContainer{
-  flex-basis: 30%;
+  flex-basis: 50%;
   min-width: 300px;
   position: relative;
   padding: 15px;
@@ -597,7 +599,7 @@ button:hover {cursor: pointer;}
 .Schedule-DayContainer .Schedule-Day-Title{
   width: 100%;
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   padding: 10px;
 }
@@ -616,9 +618,9 @@ button:hover {cursor: pointer;}
 }
 
 .Schedule-Day-Item .Schedule-Day-Item-Time, .Schedule-Day-Item .Schedule-Day-Item-EventName{
-  padding: 10px;
+  padding: 10px 20px;
   flex-basis: 50%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -711,22 +713,22 @@ button:hover {cursor: pointer;}
   color: white;
   font-size: 30px;
   text-align: center;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
 }
 
-#prizesMessage a:link{
+a:link{
   font-weight: 1000;
   color: var(--blue);
   text-decoration: none;
 }
 
-#prizesMessage a:visited{
+a:visited{
   font-weight: 1000;
   color: var(--blue);
   text-decoration: none;
 }
 
-#prizesMessage a:hover, #prizesMessage a:active{
+a:hover, a:active{
 
   color:var(--blue);
   text-decoration: underline;
@@ -741,7 +743,7 @@ button:hover {cursor: pointer;}
 }
 
 #tracksBoxesContainer{
-  padding: 4%;
+  padding: 0 25px 25px 25px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -937,7 +939,7 @@ button:hover {cursor: pointer;}
     } 
 
     .App{
-      padding: 0 15px;
+      padding: 90px 15px;
     }
 
     #FAQBackgroundContainer{
