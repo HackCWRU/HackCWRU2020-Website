@@ -8,7 +8,7 @@ class trackBox extends Component{
                     <div className = "tracksTitle">
                         {this.props.title}
                     </div>
-                    <img className = "tracksIcon" src={this.props.icon}></img>
+                    <img className = "tracksIcon" src={this.props.icon} alt={this.props.altText}></img>
                     <div className="tracksDescription">
                         {this.props.description}
                     </div>
