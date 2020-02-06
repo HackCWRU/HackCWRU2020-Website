@@ -51,7 +51,15 @@ class Schedule extends Component{
                                     8:00 PM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Dinner
+                                    Dinner <br/> Team Building Workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    8:30 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Idea Creation
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -62,15 +70,39 @@ class Schedule extends Component{
                                     Hacking starts
                                 </div>
                             </div>
-                            
-                        </div>
-                    </div>
-                    <div className ="Schedule-DayContainer">
-                        <div className="Schedule-Day-Title">
-                            Saturday
-                        </div>
-                        <div className="Schedule-Day-ItemContainer">
-                        <div className="Schedule-Day-Item">
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    10:00 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Think&#91;box&#93; laser cutting workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    10:30 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Think&#91;box&#93; 3D printing workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    11:00 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Think&#91;box&#93; laser cutting workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    11:30 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Think&#91;box&#93; 3D printing workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
                                     12:00 AM
                                 </div>
@@ -78,12 +110,19 @@ class Schedule extends Component{
                                     Midnight Snack
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className ="Schedule-DayContainer">
+                        <div className="Schedule-Day-Title">
+                            Saturday
+                        </div>
+                        <div className="Schedule-Day-ItemContainer">
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
                                     1:45 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Smash Tournament
+                                    Mini tournament 1: Smash
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -91,12 +130,28 @@ class Schedule extends Component{
                                     8:00 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Breakfast starts
+                                    Breakfast
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
-                                    1:00 PM
+                                    9:00 AM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    ISAACS IoT 101 Workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    11:00 AM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    JP Morgan Workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    12:45 PM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
                                     Lunch
@@ -104,10 +159,34 @@ class Schedule extends Component{
                             </div>
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
+                                    1:00 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    MLH Event 1: Capture the Flag
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
                                     2:00 PM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Sponsor Networking
+                                    Sponsor Networking<br/>Web Development Workshop 
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    3:15 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Professor Loui's Workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    6:00 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Doug Miel's Workshop
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -126,6 +205,14 @@ class Schedule extends Component{
                                     "General Magic" movie screening
                                 </div>
                             </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    12:00 AM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Late Night Snack
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className ="Schedule-DayContainer">
@@ -135,18 +222,10 @@ class Schedule extends Component{
                         <div className="Schedule-Day-ItemContainer">
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
-                                    1:00 AM
-                                </div>
-                                <div className="Schedule-Day-Item-EventName">
-                                    Late Night Snack
-                                </div>
-                            </div>
-                            <div className="Schedule-Day-Item">
-                                <div className="Schedule-Day-Item-Time">
                                     1:15 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Ping Pong Tournament
+                                    Mini Tournament 3: Ping Pong
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -175,15 +254,15 @@ class Schedule extends Component{
                             </div>
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
-                                    10:00 AM
+                                    10:15 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Judging
+                                    Judging Starts
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
-                                    11:30 AM
+                                    11:15 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
                                     Lunch
@@ -192,6 +271,14 @@ class Schedule extends Component{
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
                                     12:00 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Judging Ends
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    12:30 PM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
                                     Closing Ceremony

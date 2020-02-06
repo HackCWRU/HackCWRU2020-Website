@@ -21,7 +21,7 @@ class TracksSection extends Component{
                                 <TrackBox title={"FinTech"} icon={FinTechIcon} description={"Projects that intersect with finance, banking or economics."}/>
                             </div>
                             <div class="tracksItem">
-                                <TrackBox title={"IoT"} icon={IoTIcon} description={"Projects involving smart devices and the data they generate."}/>
+                                <TrackBox title={"Civic"} icon={IoTIcon} description={"Projects involving smart devices and the data they generate."}/>
                             </div>
                             <div class="tracksItem">
                                 <TrackBox title={"Health"} icon={HealthIcon} description={"Projects based in health IT, public health, or bioinformatics."}/>
