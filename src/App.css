@@ -661,12 +661,17 @@ button:hover {cursor: pointer;}
 
 #SponsorshipSection{
   margin-bottom: 50px;
+  color: white;
+  
 }
 #sponsorshipHeader{
-  color: white;
   font-size: 30px;
   text-align: center;
   padding: 25px;
+}
+#JoeMandato{
+  text-align: center;
+  font-size: 36px;
 }
 
 #stickermule{

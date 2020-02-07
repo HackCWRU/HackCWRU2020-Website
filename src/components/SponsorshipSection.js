@@ -16,6 +16,8 @@ class SponsorshipSection extends Component{
                     Make connections <br/>with our incredible sponsors...
                 </div>
                 <div id = "SponsorGrid" class="flex-grid">
+                    <div className="SponsorGrid-Item topTierSponsor" id="JoeMandato">Joe Mandato <br/>(MGT '04)</div>
+
                     <div className="SponsorGrid-Item topTierSponsor"><div><a href="http://hackp.ac/mlh-stickermule-hackathons"><img id="stickermule" src={stickerMuleLogo}></img></a></div></div>
                     
                     <div className="SponsorGrid-Item" id="EpicLogo"><div><a href="https://www.epic.com/"><img src={EpicLogo}></img></a></div></div>
