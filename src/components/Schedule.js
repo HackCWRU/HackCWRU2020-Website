@@ -162,7 +162,7 @@ class Schedule extends Component{
                                     1:00 PM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    MLH Event 1: Capture the Flag
+                                    MLH Event: Capture the Flag
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -225,7 +225,7 @@ class Schedule extends Component{
                                     1:15 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Mini Tournament 3: Ping Pong
+                                    Mini Tournament 2: Ping Pong
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
