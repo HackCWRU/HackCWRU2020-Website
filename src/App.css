@@ -678,6 +678,17 @@ button:hover {cursor: pointer;}
   background-color: white;
 }
 
+#EpicLogo{
+  flex-basis: 250px;
+}
+#KeyBankLogo{
+  flex-basis: 375px;
+}
+
+#JPMorganLogo{
+  flex-basis: 450px;
+}
+
 #SponsorGrid{
   display: flex;
   flex-direction: row;
