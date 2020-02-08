@@ -170,7 +170,7 @@ class Schedule extends Component{
                                     2:00 PM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
-                                    Sponsor Networking<br/>Web Development Workshop 
+                                    Sponsor Networking
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -179,6 +179,14 @@ class Schedule extends Component{
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
                                     Professor Loui's Workshop
+                                </div>
+                            </div>
+                            <div className="Schedule-Day-Item">
+                                <div className="Schedule-Day-Item-Time">
+                                    4:30 PM
+                                </div>
+                                <div className="Schedule-Day-Item-EventName">
+                                    Web Development Workshop 
                                 </div>
                             </div>
                             <div className="Schedule-Day-Item">
@@ -246,7 +254,7 @@ class Schedule extends Component{
                             </div>
                             <div className="Schedule-Day-Item">
                                 <div className="Schedule-Day-Item-Time">
-                                    8:00 AM
+                                    9:00 AM
                                 </div>
                                 <div className="Schedule-Day-Item-EventName">
                                     Hacking ends
