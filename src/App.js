@@ -110,7 +110,7 @@ class App extends Component{
 
               <div className = "App" >
                 
-                <Countdown HackDate = {this.state.HackDate} />
+                {/*<Countdown HackDate = {this.state.HackDate} />*/}
                 <Switch>
                   <Route key="home" path="/" exact strict render={() => (
                       <HeaderSection key={Math.random()}  signUpConfirmation={false}/>   
