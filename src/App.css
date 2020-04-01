@@ -14,7 +14,7 @@
 }
 
 .App {
-  padding: 0 150px;
+  padding: 50px 150px;
   overflow-x: initial;
 }
 
@@ -309,14 +309,22 @@ button:hover {cursor: pointer;}
   color: var(--red);
   border-style: solid;
   transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
+  /*since it is now disabled*/
+  cursor: not-allowed;
 }
 
-#registerBtn:hover{
+/*#registerBtn:hover{
   text-shadow:0 0 10px var(--red);
   background: none;
   border-color: rgb(255, 193, 193);
   box-shadow: 0 0 15px 2px var(--red), 0 0 12px 2px var(--red) inset;
   color: rgb(255, 193, 193);
+}*/
+
+.pastEventNotice{
+  color:white;
+  font-family: opensans;
+  font-size: 20px;
 }
 
 #oldWebsiteBtn{

@@ -8,6 +8,7 @@ import Logo from './Logo.js';
 import CoCPopUp from './CoCPopUp';
 import Confirmation from './Confirmation';
 import { Redirect } from 'react-router-dom';
+import { rgbToHex } from '@material-ui/core';
 
 class HeaderSection extends Component {
 
@@ -72,6 +73,7 @@ class HeaderSection extends Component {
               
             </div>
             <div className= "headerButtonSection">
+              <div className="pastEventNotice">This event has passed. See you next year!</div>
               <div className ="confirmation">
                 <Confirmation signUpConfirmation={this.state.signUpConfirmation}
                   finishSignUp={this.finishSignUp.bind(this)} />
@@ -80,7 +82,8 @@ class HeaderSection extends Component {
 
               <div className = "registerButtonGroup">
               
-              <button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>
+              {/*<button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>*/}
+              <button id="registerBtn">Register</button>
               <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
                         _onButtonClick={this._onButtonClick.bind(this)} />
               </div>
