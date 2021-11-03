@@ -6,7 +6,7 @@ class About extends Component{
             <div id = "AboutSection" >
                 <div className = "skewTitleBox">
                     <div>
-                        What is HackCWRU?
+                        WHAT IS HACKCWRU?
                     </div>
                 </div>
                 <div id = "AboutGrid" class="flex-grid">

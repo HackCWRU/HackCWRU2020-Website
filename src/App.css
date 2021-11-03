@@ -412,7 +412,8 @@ button:hover {cursor: pointer;}
   padding: 10px 0px 10px 150px;
   border: 5px solid var(--red);
   background: var(--darkred);
-  font-family: prstartk;
+  /* \/ placeholder dont @me */
+  font-family: 'Black Han Sans', sans-serif;
   transform: skewX(-20deg) translateX(-160px);
   color: white;
   font-size: 25px;
