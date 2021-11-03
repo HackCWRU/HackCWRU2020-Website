@@ -114,16 +114,18 @@ class App extends Component{
                 <Switch>
                   <Route key="home" path="/" exact strict render={() => (
                       <HeaderSection key={Math.random()}  signUpConfirmation={false}/>   
-                      )}/>/>
+                      )}/>
                   <Route key="finishSignUp" path="/confirm" render={({match}) => (
                       <HeaderSection key={Math.random()} signUpConfirmation={true}/>   
-                      )}/>/>
+                      )}/>
                 </Switch>
                 <About/>
                 <TracksSection/>
                 <FAQ/>
                 <Schedule/>
-                <SponsorshipSection/>
+                {
+                  //<SponsorshipSection/>
+                }
               </div>
 
               {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}

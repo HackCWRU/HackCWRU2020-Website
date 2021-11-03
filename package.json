@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "this is the website for hackCWRU 2020, theme: Retro Game ",
   "private": true,
-  "homepage" : "https://hackcwru.info",
+  "homepage": "https://hackcwru.info",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
