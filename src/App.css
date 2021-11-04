@@ -99,7 +99,7 @@ body,html {
   /** Count Down Line **/
 #countdown {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
@@ -108,9 +108,10 @@ body,html {
   color: white;
 }
 
+/* WHY ARE THERE TWO STYLES FOR THE SAME ELEMENT? */
 #countdown div{
-  font-family: prstartk;
-  font-size: 15px;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 35px;
   padding: 5px;
 }
 
