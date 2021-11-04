@@ -71,7 +71,6 @@ class HeaderSection extends Component {
               
             </div>
             <div className= "headerButtonSection">
-              {/* <Countdown HackDate={'February 4, 2022, 00:00:00'}/> */}
               <Countdown HackDate={'February 4, 2022, 00:00:00'}/>
               <div className ="confirmation">
                 <Confirmation signUpConfirmation={this.state.signUpConfirmation}
